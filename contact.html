@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOON</title>
+<meta name="description" content="'I help busy mums lose 10kg in 8 weeks with a home workout plan. £297, fully online, 150+ women completed it.'">
+<meta property="og:title" content="BOON">
+<meta property="og:description" content="'I help busy mums lose 10kg in 8 weeks with a home workout plan. £297, fully online, 150+ women completed it.'">
+<meta property="og:type" content="website">
+<meta name="twitter:title" content="BOON">
+<meta name="twitter:description" content="'I help busy mums lose 10kg in 8 weeks with a home workout plan. £297, fully online, 150+ women completed it.'">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href='index.html' class='logo'>BOON</a>
+  <div class='nav-links'>
+    <a href='index.html'>Home</a>
+    <a href='services.html'>Services</a>
+    <a href='contact.html'>Contact</a>
+    <a href='vsl.html'>Video</a>
+  </div>
+  <a href='contact.html' class='nav-cta'>Get Started</a>
+</nav>
+
+<section>
+  <h2>Get in Touch</h2>
+  <p>Have a question or want to learn more about our program?</p>
+  <form class='contact-form'>
+    <input type='text' placeholder='Name'>
+    <input type='email' placeholder='Email'>
+    <textarea placeholder='Message'></textarea>
+    <button>Send</button>
+  </form>
+  <p>We respond within 24 hours.</p>
+</section>
+
+<footer>
+  BOON
+  &copy; 2026
+</footer>
+
+<div class='sticky-mobile-cta'>
+  <a href='contact.html' class='btn'>Start My Plan</a>
+</div>
+
+<script>document.querySelectorAll('.faq-item').forEach(function(item){item.addEventListener('click',function(){var answer=this.querySelector('.faq-answer');var chevron=this.querySelector('.faq-chevron');var isOpen=this.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-answer').style.maxHeight='0';i.querySelector('.faq-chevron').textContent='+';});if(!isOpen){this.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';chevron.textContent='×';}});});window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});</script>
+</body>
+</html>
