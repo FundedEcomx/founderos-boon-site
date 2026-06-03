@@ -15,8 +15,8 @@
 </head>
 <body>
 <nav>
-<a class="logo" href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;"><svg viewBox='0 0 48 48' width='48' height='48'>
-  <path fill="oklch(0.50 0.046 196)" d="M24 4c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12s12-5.373 12-12V16c0-6.627-5.373-12-12-12z"/>
+<a class="logo" href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;"><svg viewBox="0 0 48 48" width="48" height="48">
+  <path fill="oklch(0.50 0.075 220)" d="M14 4c-2.209 0-4 1.791-4 4v32c0 2.209 1.791 4 4 4h20c2.209 0 4-1.791 4-4V26c0-2.209-1.791-4-4-4H20v-4h14c2.209 0 4-1.791 4-4V8c0-2.209-1.791-4-4-4H14z"/>
 </svg><span style="font-family:var(--font-display,serif);font-size:22px;color:var(--text,#fff);">BOON</span></a>
 <div class="nav-links">
 <a href="index.html">Home</a>
@@ -29,56 +29,79 @@
 <a href="contact.html" class="nav-cta">Get Started</a>
 <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
-<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Contact BOON - Get Support & Sales Assistance</title><meta name='description' content='Have questions about BOON? Reach out to our dedicated support and sales team for personalized assistance, product inquiries, or a free demo.'></head><body><div class='announce'><span>Unlock your potential · Achieve more with BOON · Rated 4.9&#9733;</span></div><main><section id='hero'><div class='wrap' style='text-align:center;'><div class='sec-head reveal' style='max-width:800px; margin-inline:auto;'><span class='eyebrow'>We're Here for You</span><h1 class='serif'>Get in Touch. We're Here to <em>Help</em>.</h1><p class='p-sub' style='max-width:70ch; margin-inline:auto;'>Have questions about BOON? Reach out to our expert team for personalized support, product inquiries, or a free demonstration.</p></div></div></section><section class='bg-sand'><div class='wrap'><div class='contact-form reveal'><h2 class='serif' style='text-align:center; margin-bottom:25px;'>Send Us a Message</h2><div class='form-group'><label for='name'>Your Name</label><input type='text' id='name' placeholder='Enter your full name' required></div><div class='form-group'><label for='email'>Your Email</label><input type='email' id='email' placeholder='name@example.com' required></div><div class='form-group'><label for='message'>Your Message</label><textarea id='message' placeholder='Tell us how we can help you' required></textarea></div><button type='submit' class='btn btn-primary'>Send Message</button></div><div class='trust-signals reveal'><div class='trust-signal-item'><h4 style='color:var(--accent-d);'>24-Hour Response</h4><p>We aim to respond to all inquiries quickly.</p></div><div class='trust-signal-item'><h4 style='color:var(--accent-d);'>Dedicated Support Team</h4><p>Get expert help tailored to your needs.</p></div><div class='trust-signal-item'><h4 style='color:var(--accent-d);'>Free Consultation</h4><p>Discuss your goals with our growth specialists.</p></div></div></div></section><section id='faq'><div class='sec-head reveal' style='text-align:center; max-width:720px; margin:0 auto 48px;'><span class='eyebrow'>Need Quick Answers?</span><h2 class='serif'>Frequently Asked Questions.</h2></div><div class='faq-container reveal'><div class='faq-item'><div class='faq-question'>What is the best way to get support?<span class='faq-chevron'>+</span></div><div class='faq-answer'>For technical assistance or urgent inquiries, our live chat support (available within the BOON application) is the fastest way to get help. For general questions, you can also email us directly.</div></div><div class='faq-item'><div class='faq-question'>Can I request a personalized demo of BOON?<span class='faq-chevron'>+</span></div><div class='faq-answer'>Absolutely! We encourage you to fill out the contact form above, mentioning your interest in a demo. Our sales team will get in touch to schedule a session tailored to your specific business needs.</div></div><div class='faq-item'><div class='faq-question'>Do you offer enterprise solutions?<span class='faq-chevron'>+</span></div><div class='faq-answer'>Yes, for larger organizations or unique requirements, we offer custom Enterprise plans. Please use the contact form to reach our sales team, and we will design a solution that fits your scale.</div></div></div></section><section class='bg-sand'><div class='wrap' style='text-align:center; padding-block:clamp(48px,6vw,96px);'><div class='sec-head reveal' style='margin-bottom:40px; text-align:center; max-width:800px; margin-inline:auto;'><h2 class='serif'>Ready to Elevate Your Online Presence?</h2><p style='font-size:18px; color:var(--ink-soft);'>Our team is eager to help you get started with BOON and unlock your full digital potential.</p></div><a href='contact.html' class='btn btn-primary reveal' style='padding:18px 40px; font-size:16px; margin-top:20px;'>Speak to a Specialist</a></div></section></main><footer><div class='wrap'>BOON &copy; 2026<br><a href='#privacy' style='margin-right:15px; color:var(--ink-faint);'>Privacy Policy</a><a href='#terms' style='color:var(--ink-faint);'>Terms of Service</a></div></footer><div class='sticky-mobile-cta'><a href='contact.html' class='btn btn-primary'>Speak to a Specialist</a></div><script>
-// FAQ accordion
-document.querySelectorAll('.faq-item').forEach(function(item){
-  item.addEventListener('click',function(){
-    var answer=this.querySelector('.faq-answer');
-    var chevron=this.querySelector('.faq-chevron');
-    var isOpen=this.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(function(i){
-      i.classList.remove('open');
-      i.querySelector('.faq-answer').style.maxHeight='0';
-      i.querySelector('.faq-chevron').textContent='+';
-    });
-    if(!isOpen){this.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';chevron.textContent='×';}
-  });
-});
-// Nav scroll
-window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});
-// Hamburger menu
-var ham=document.querySelector('.hamburger');var nl=document.querySelector('.nav-links');if(ham&&nl){ham.addEventListener('click',function(){nl.classList.toggle('open');});}
-// Picker tabs (Note: Not used on contact.html, but kept for full site JS)
-document.querySelectorAll('.picker-tab').forEach(function(tab){
-  tab.addEventListener('click',function(){
-    var target=this.dataset.tab;
-    document.querySelectorAll('.picker-tab').forEach(function(t){t.classList.remove('active');});
-    document.querySelectorAll('.picker-content').forEach(function(c){c.classList.remove('active');});
-    this.classList.add('active');
-    var el=document.getElementById(target);
-    if(el){el.classList.add('active');}
-  });
-});
-// Picker card select (Note: Not used on contact.html, but kept for full site JS)
-document.querySelectorAll('.picker-card').forEach(function(card){
-  card.addEventListener('click',function(){
-    var parent=this.closest('.picker-content');
-    if(parent){parent.querySelectorAll('.picker-card').forEach(function(c){c.classList.remove('selected');});}
-    this.classList.add('selected');
-  });
-});
-// Reveal on scroll
-const revealElements = document.querySelectorAll('.reveal');
-const revealObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('in');
-            observer.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.1 });
-revealElements.forEach(el => revealObserver.observe(el));
-</script></body></html>
+<section class="reveal" style="max-width:700px;margin:0 auto;">
+      <h2 style="text-align:center;">Get In Touch With BOON Support</h2>
+      <p class="section-sub">Have questions about your BOON hub, an order, or need assistance? Our dedicated team is here to help you.</p>
+      <div class="service-card" style="padding:40px;">
+        <form action="#" method="POST" style="display:grid;gap:20px;">
+          <div>
+            <label for="name" style="display:block;margin-bottom:8px;font-weight:500;font-size:14px;color:var(--ink-soft);">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" style="width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--sand-2);font-size:15px;color:var(--ink);" required>
+          </div>
+          <div>
+            <label for="email" style="display:block;margin-bottom:8px;font-weight:500;font-size:14px;color:var(--ink-soft);">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" style="width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--sand-2);font-size:15px;color:var(--ink);" required>
+          </div>
+          <div>
+            <label for="message" style="display:block;margin-bottom:8px;font-weight:500;font-size:14px;color:var(--ink-soft);">Your Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="How can we help you today?" style="width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--sand-2);font-size:15px;color:var(--ink);resize:vertical;" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Your Inquiry</button>
+        </form>
+      </div>
+      <div style="margin-top:40px;text-align:center;">
+        <p style="font-size:16px;color:var(--ink-soft);font-weight:500;">Prefer to call? We're available Monday-Friday, 9 AM - 5 PM GMT.</p>
+        <p style="font-size:18px;color:var(--ocean-deep);font-weight:600;margin-top:10px;">+44 20 7946 0958</p>
+        <p style="font-size:14px;color:var(--text-subtle);margin-top:20px;">Expect a response to your email within 24 business hours.</p>
+      </div>
+    </section>
+    <footer>
+      <div class="wrap">
+        <p>&copy; 2026 BOON. All rights reserved. | <a href="#privacy" style="text-decoration:underline;">Privacy Policy</a> | <a href="#terms" style="text-decoration:underline;">Terms of Service</a></p>
+      </div>
+    </footer>
+    <script>
+      // FAQ accordion
+      document.querySelectorAll('.faq-item').forEach(function(item){
+        item.addEventListener('click',function(){
+          var answer=this.querySelector('.faq-answer');
+          var chevron=this.querySelector('.faq-chevron');
+          var isOpen=this.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(function(i){
+            i.classList.remove('open');
+            i.querySelector('.faq-answer').style.maxHeight='0';
+            i.querySelector('.faq-chevron').textContent='+';
+          });
+          if(!isOpen){this.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';chevron.textContent='\\u00d7';}
+        });
+      });
+      // Nav scroll
+      window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});
+      // Hamburger menu
+      var ham=document.querySelector('.hamburger');var nl=document.querySelector('.nav-links');if(ham&&nl){ham.addEventListener('click',function(){nl.classList.toggle('open');});}
+      // Picker tabs
+      document.querySelectorAll('.picker-tab').forEach(function(tab){
+        tab.addEventListener('click',function(){
+          var target=this.dataset.tab;
+          document.querySelectorAll('.picker-tab').forEach(function(t){t.classList.remove('active');});
+          document.querySelectorAll('.picker-content').forEach(function(c){c.classList.remove('active');});
+          this.classList.add('active');
+          var el=document.getElementById(target);
+          if(el){el.classList.add('active');}
+        });
+      });
+      // Picker card select
+      document.querySelectorAll('.picker-card').forEach(function(card){
+        card.addEventListener('click',function(){
+          var parent=this.closest('.picker-content');
+          if(parent){parent.querySelectorAll('.picker-card').forEach(function(c){c.classList.remove('selected');});}
+          this.classList.add('selected');
+        });
+      });
+    </script>
+    <div class="sticky-mobile-cta">
+      <a href="checkout.html" class="btn btn-primary">Add to Cart - £149.00</a>
+    </div>
 <script>document.querySelectorAll('.faq-item').forEach(function(item){item.addEventListener('click',function(){var answer=this.querySelector('.faq-answer');var chevron=this.querySelector('.faq-chevron');var isOpen=this.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-answer').style.maxHeight='0';i.querySelector('.faq-chevron').textContent='+';});if(!isOpen){this.classList.add('open');answer.style.maxHeight='2000px';chevron.textContent='×';}});});window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});</script>
 </body>
 </html>
