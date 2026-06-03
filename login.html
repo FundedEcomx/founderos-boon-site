@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav> <div class='logo'>BOON</div> <div class='nav-links'> <a href='index.html'>Home</a> <a href='services.html'>Services</a> <a href='pricing.html'>Pricing</a> <a href='contact.html'>Contact</a> <a href='about.html'>About</a> <a href='login.html'>Login</a> <a href='dashboard.html'>Dashboard</a> <a href='checkout.html'>Checkout</a> <a href='vsl.html'>VSL</a> </div> <button class='nav-cta'>Start My Plan</button> <button class='hamburger'> <span></span> <span></span> <span></span> </button> </nav> <section> <h2>Login</h2> <form> <input type='email' placeholder='Email'> <input type='password' placeholder='Password'> <button class='btn'>Sign In</button> <p>Not a member? <a href='checkout.html'>Apply here</a></p> <p>Forgot password?</p> </form> </section> <footer> BOON &copy; 2026 </footer> <div class='sticky-mobile-cta'> <button class='btn'>Start My Plan</button> </div>
+
 <script>document.querySelectorAll('.faq-item').forEach(function(item){item.addEventListener('click',function(){var answer=this.querySelector('.faq-answer');var chevron=this.querySelector('.faq-chevron');var isOpen=this.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-answer').style.maxHeight='0';i.querySelector('.faq-chevron').textContent='+';});if(!isOpen){this.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';chevron.textContent='×';}});});window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});</script>
 </body>
 </html>
