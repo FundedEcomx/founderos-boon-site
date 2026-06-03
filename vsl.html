@@ -14,7 +14,71 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<script>document.querySelectorAll('.faq-item').forEach(function(item){item.addEventListener('click',function(){var answer=this.querySelector('.faq-answer');var chevron=this.querySelector('.faq-chevron');var isOpen=this.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-answer').style.maxHeight='0';i.querySelector('.faq-chevron').textContent='+';});if(!isOpen){this.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';chevron.textContent='×';}});});window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});</script>
+<nav>
+<a class="logo" href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;"><svg viewBox='0 0 48 48' width='48' height='48'>
+  <path fill="oklch(0.50 0.046 196)" d="M24 4c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12s12-5.373 12-12V16c0-6.627-5.373-12-12-12z"/>
+</svg><span style="font-family:var(--font-display,serif);font-size:22px;color:var(--text,#fff);">BOON</span></a>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="pricing.html">Pricing</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+<a href="vsl.html">Watch</a>
+</div>
+<a href="contact.html" class="nav-cta">Get Started</a>
+<button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>BOON VSL - Watch Before You Join</title><meta name='description' content='Watch this video to understand how BOON empowers solo creators and small businesses to automate tasks, grow their audience, and boost profitability effortlessly.'></head><body><div class='announce'><span>Unlock your potential · Achieve more with BOON · Rated 4.9&#9733;</span></div><main><section id='vsl-hero' style='padding-top:clamp(40px,5vw,60px); padding-bottom:clamp(40px,5vw,60px);'><div class='wrap'><div class='sec-head reveal' style='text-align:center; max-width:800px; margin-inline:auto; margin-bottom:40px;'><h1 class='serif'>Watch This Before You <em>Join</em> BOON.</h1><p class='p-sub' style='max-width:70ch; margin-inline:auto;'>Discover the core strategies and features that make BOON indispensable for your digital growth. This short video reveals how you can transform your online presence.</p></div><div class='vsl-video-container reveal'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' stroke='none'><path d='M21.409 9.352a2 2 0 0 1 0 5.296l-13.778 7.394A2 2 0 0 1 4 20V4a2 2 0 0 1 3.631-1.048z'/></svg><span>Watch This Before You Join</span></div></div></section><section class='bg-sand'><div class='wrap'><div class='sec-head reveal' style='text-align:center; max-width:720px; margin:0 auto 48px;'><span class='eyebrow'>Why BOON is Your Next Step</span><h2 class='serif'>Key Benefits Revealed.</h2></div><div class='vsl-bullets reveal'><ul><li>Experience effortless content creation and scheduling with intelligent AI suggestions.</li><li>Gain crystal-clear insights into your audience engagement and campaign performance.</li><li>Expand your reach across all major platforms without manual cross-posting.</li><li>Save precious hours every week, re-investing that time into what you love.</li><li>Boost your overall online profitability with optimized strategies and automated lead nurturing.</li><li>Enjoy a user-friendly interface designed for creators, not just tech experts.</li></ul></div></div></section><section><div class='wrap'><div class='sec-head reveal' style='text-align:center; max-width:720px; margin:0 auto 48px;'><span class='eyebrow'>Proof of Transformation</span><h2 class='serif'>Real Results, Real People.</h2></div><div class='testimonial-grid reveal'><div class='testimonial-card'><span class='result-badge' style='background: #E8F5E9; border-color: #A5D6A7; color: #4CAF50;'>Follower Growth: +180%</span><p>"After watching the VSL, I signed up. Best decision. My Instagram followers have nearly doubled in 3 months! BOON truly delivers."</p><div class='author'>Olivia P., Leeds</div></div><div class='testimonial-card'><span class='result-badge' style='background: #E3F2FD; border-color: #90CAF9; color: #2196F3;'>Conversion Rate: +50%</span><p>"The video convinced me BOON was the answer. My email list conversion rates have never been higher. It's a marketing powerhouse."</p><div class='author'>Sam L., Cardiff</div></div><div class='testimonial-card'><span class='result-badge' style='background: #FFF3E0; border-color: #FFCC80; color: #FF9800;'>Brand Visibility: 4X</span><p>"I hesitated, but the VSL showed me the potential. BOON helped me reach audiences I never could before. My brand is everywhere now!"</p><div class='author'>Zara H., Birmingham</div></div></div></div></section><section class='bg-sand'><div class='wrap' style='text-align:center; padding-block:clamp(48px,6vw,96px);'><div class='sec-head reveal' style='margin-bottom:40px; text-align:center; max-width:800px; margin-inline:auto;'><h2 class='serif'>Ready to Experience Your BOON Moment?</h2><p style='font-size:18px; color:var(--ink-soft);'>You've seen the potential. Now it's time to act. Join BOON and start automating your way to digital success today.</p></div><a href='contact.html' class='btn btn-primary reveal' style='padding:18px 40px; font-size:16px; margin-top:20px;'>Start My Free Trial Now</a><p class='reveal' style='color:var(--ink-faint); font-size:14px; margin-top:15px;'>Limited spots available for personalized onboarding.</p></div></section></main><footer><div class='wrap'>BOON &copy; 2026<br><a href='#privacy' style='margin-right:15px; color:var(--ink-faint);'>Privacy Policy</a><a href='#terms' style='color:var(--ink-faint);'>Terms of Service</a></div></footer><div class='sticky-mobile-cta'><a href='contact.html' class='btn btn-primary'>Start My Free Trial Now</a></div><script>
+// FAQ accordion
+document.querySelectorAll('.faq-item').forEach(function(item){
+  item.addEventListener('click',function(){
+    var answer=this.querySelector('.faq-answer');
+    var chevron=this.querySelector('.faq-chevron');
+    var isOpen=this.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i){
+      i.classList.remove('open');
+      i.querySelector('.faq-answer').style.maxHeight='0';
+      i.querySelector('.faq-chevron').textContent='+';
+    });
+    if(!isOpen){this.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';chevron.textContent='×';}
+  });
+});
+// Nav scroll
+window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});
+// Hamburger menu
+var ham=document.querySelector('.hamburger');var nl=document.querySelector('.nav-links');if(ham&&nl){ham.addEventListener('click',function(){nl.classList.toggle('open');});}
+// Picker tabs (Note: Not used on vsl.html, but kept for full site JS)
+document.querySelectorAll('.picker-tab').forEach(function(tab){
+  tab.addEventListener('click',function(){
+    var target=this.dataset.tab;
+    document.querySelectorAll('.picker-tab').forEach(function(t){t.classList.remove('active');});
+    document.querySelectorAll('.picker-content').forEach(function(c){c.classList.remove('active');});
+    this.classList.add('active');
+    var el=document.getElementById(target);
+    if(el){el.classList.add('active');}
+  });
+});
+// Picker card select (Note: Not used on vsl.html, but kept for full site JS)
+document.querySelectorAll('.picker-card').forEach(function(card){
+  card.addEventListener('click',function(){
+    var parent=this.closest('.picker-content');
+    if(parent){parent.querySelectorAll('.picker-card').forEach(function(c){c.classList.remove('selected');});}
+    this.classList.add('selected');
+  });
+});
+// Reveal on scroll
+const revealElements = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+revealElements.forEach(el => revealObserver.observe(el));
+</script></body></html>
+<script>document.querySelectorAll('.faq-item').forEach(function(item){item.addEventListener('click',function(){var answer=this.querySelector('.faq-answer');var chevron=this.querySelector('.faq-chevron');var isOpen=this.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-answer').style.maxHeight='0';i.querySelector('.faq-chevron').textContent='+';});if(!isOpen){this.classList.add('open');answer.style.maxHeight='2000px';chevron.textContent='×';}});});window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});</script>
 </body>
 </html>
