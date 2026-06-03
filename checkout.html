@@ -14,7 +14,61 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<script>document.querySelectorAll('.faq-item').forEach(function(item){item.addEventListener('click',function(){var answer=this.querySelector('.faq-answer');var chevron=this.querySelector('.faq-chevron');var isOpen=this.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-answer').style.maxHeight='0';i.querySelector('.faq-chevron').textContent='+';});if(!isOpen){this.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';chevron.textContent='×';}});});window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});</script>
+<nav>
+<a class="logo" href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;"><svg viewBox='0 0 48 48' width='48' height='48'>
+  <path fill="oklch(0.50 0.046 196)" d="M24 4c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12s12-5.373 12-12V16c0-6.627-5.373-12-12-12z"/>
+</svg><span style="font-family:var(--font-display,serif);font-size:22px;color:var(--text,#fff);">BOON</span></a>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="pricing.html">Pricing</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+<a href="vsl.html">Watch</a>
+</div>
+<a href="contact.html" class="nav-cta">Get Started</a>
+<button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Checkout - BOON Subscription</title><meta name='description' content='Complete your BOON subscription purchase. Securely pay for your chosen plan and unlock powerful SaaS tools for digital growth.'></head><body><div class='announce'><span>Unlock your potential · Achieve more with BOON · Rated 4.9&#9733;</span></div><main class='checkout-page'><div class='wrap'><div class='payment-details'><h2 class='serif' style='margin-bottom:30px;'>Payment Information</h2><div class='payment-form'><div class='form-group'><label for='checkout-name'>Name on Card</label><input type='text' id='checkout-name' placeholder='Jane Doe' required></div><div class='form-group'><label for='checkout-email'>Email Address</label><input type='email' id='checkout-email' placeholder='name@example.com' required></div><div class='form-group'><label for='card-number'>Card Number</label><input type='text' id='card-number' placeholder='&#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679;' required></div><div class='card-fields'><div class='form-group'><label for='expiry'>Expiry Date (MM/YY)</label><input type='text' id='expiry' placeholder='MM/YY' required></div><div class='form-group'><label for='cvc'>CVC</label><input type='text' id='cvc' placeholder='&#9679;&#9679;&#9679;' required></div></div><button type='submit' class='btn btn-primary' style='margin-top:20px;'>Complete Purchase</button><div class='security-badges'><img src='https://via.placeholder.com/60x24/FFFFFF/000000?text=SSL' alt='SSL Secure'><img src='https://via.placeholder.com/60x24/FFFFFF/000000?text=PCI' alt='PCI Compliant'><img src='https://via.placeholder.com/60x24/FFFFFF/000000?text=TRUST' alt='Trusted Payments'></div></div></div><div class='order-summary'><h3 class='serif'>Order Summary</h3><div class='order-item'><span>BOON Pro Plan (Annual)</span><span>&#163;79/month</span></div><div class='order-item' style='margin-bottom:20px; border-bottom:1px dashed var(--line-2); padding-bottom:15px;'><span>Total Billed Annually</span><span>&#163;948.00</span></div><div class='order-item'><span>Subtotal</span><span>&#163;948.00</span></div><div class='order-item'><span>Tax</span><span>&#163;0.00</span></div><div class='order-total'><span>Total Due Now</span><span>&#163;948.00</span></div><p style='font-size:13px; color:var(--ink-faint); margin-top:15px; text-align:center;'>By clicking &quot;Complete Purchase&quot;, you agree to BOON&apos;s <a href='#terms' style='text-decoration:underline; color:var(--ink-faint);'>Terms of Service</a>.</p></div></div></main><footer><div class='wrap'>BOON &copy; 2026<br><a href='#privacy' style='margin-right:15px; color:var(--ink-faint);'>Privacy Policy</a><a href='#terms' style='color:var(--ink-faint);'>Terms of Service</a></div></footer><div class='sticky-mobile-cta'><a href='contact.html' class='btn btn-primary'>Complete Purchase</a></div><script>
+// FAQ accordion
+document.querySelectorAll('.faq-item').forEach(function(item){
+  item.addEventListener('click',function(){
+    var answer=this.querySelector('.faq-answer');
+    var chevron=this.querySelector('.faq-chevron');
+    var isOpen=this.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i){
+      i.classList.remove('open');
+      i.querySelector('.faq-answer').style.maxHeight='0';
+      i.querySelector('.faq-chevron').textContent='+';
+    });
+    if(!isOpen){this.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';chevron.textContent='×';}
+  });
+});
+// Nav scroll
+window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});
+// Hamburger menu
+var ham=document.querySelector('.hamburger');var nl=document.querySelector('.nav-links');if(ham&&nl){ham.addEventListener('click',function(){nl.classList.toggle('open');});}
+// Picker tabs (Note: Not used on checkout.html, but kept for full site JS)
+document.querySelectorAll('.picker-tab').forEach(function(tab){
+  tab.addEventListener('click',function(){
+    var target=this.dataset.tab;
+    document.querySelectorAll('.picker-tab').forEach(function(t){t.classList.remove('active');});
+    document.querySelectorAll('.picker-content').forEach(function(c){c.classList.remove('active');});
+    this.classList.add('active');
+    var el=document.getElementById(target);
+    if(el){el.classList.add('active');}
+  });
+});
+// Picker card select (Note: Not used on checkout.html, but kept for full site JS)
+document.querySelectorAll('.picker-card').forEach(function(card){
+  card.addEventListener('click',function(){
+    var parent=this.closest('.picker-content');
+    if(parent){parent.querySelectorAll('.picker-card').forEach(function(c){c.classList.remove('selected');});}
+    this.classList.add('selected');
+  });
+});
+// Reveal on scroll (No specific reveals needed for checkout, but keeping consistent)
+</script></body></html>
+<script>document.querySelectorAll('.faq-item').forEach(function(item){item.addEventListener('click',function(){var answer=this.querySelector('.faq-answer');var chevron=this.querySelector('.faq-chevron');var isOpen=this.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-answer').style.maxHeight='0';i.querySelector('.faq-chevron').textContent='+';});if(!isOpen){this.classList.add('open');answer.style.maxHeight='2000px';chevron.textContent='×';}});});window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});</script>
 </body>
 </html>
