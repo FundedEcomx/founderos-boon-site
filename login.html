@@ -14,7 +14,71 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>BOON - SaaS Services for Solo Consumers</title></head><body><nav><div class='logo'>BOON</div><div class='nav-links'><a href='index.html'>Home</a><a href='services.html'>Services</a><a href='pricing.html'>Pricing</a><a href='about.html'>About</a><a href='contact.html'>Contact</a></div><button class='nav-cta' href='contact.html'>Get Started</button><button class='hamburger'><span></span><span></span><span></span></button></nav><section><h2>Login</h2><form><input type='email' placeholder='Email'><input type='password' placeholder='Password'><button class='btn'>Sign In</button><a href='#'>Forgot Password?</a><a href='#'>Not a member? Apply here</a></form></section><footer>&copy; 2026 BOON. All rights reserved. <a href='#privacy'>Privacy Policy</a> <a href='#terms'>Terms of Service</a></footer></body>
-<script>document.querySelectorAll('.faq-item').forEach(function(item){item.addEventListener('click',function(){var answer=this.querySelector('.faq-answer');var chevron=this.querySelector('.faq-chevron');var isOpen=this.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-answer').style.maxHeight='0';i.querySelector('.faq-chevron').textContent='+';});if(!isOpen){this.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';chevron.textContent='×';}});});window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});</script>
+<nav>
+<a class="logo" href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;"><svg viewBox='0 0 48 48' width='48' height='48'>
+  <path fill="oklch(0.50 0.046 196)" d="M24 4c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12s12-5.373 12-12V16c0-6.627-5.373-12-12-12z"/>
+</svg><span style="font-family:var(--font-display,serif);font-size:22px;color:var(--text,#fff);">BOON</span></a>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="pricing.html">Pricing</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+<a href="vsl.html">Watch</a>
+</div>
+<a href="contact.html" class="nav-cta">Get Started</a>
+<button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>BOON Login - Access Your Dashboard</title><meta name='description' content='Log in to your BOON account to access your dashboard, manage your automation, and view your growth analytics.'></head><body><div class='announce'><span>Unlock your potential · Achieve more with BOON · Rated 4.9&#9733;</span></div><main class='login-form-wrapper'><div class='login-form reveal'><div class='logo-login' style='display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;'><svg viewBox='0 0 48 48' width='48' height='48'><path fill='oklch(0.50 0.046 196)' d='M24 4c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12s12-5.373 12-12V16c0-6.627-5.373-12-12-12z'/></svg><span style='font-family:var(--font-display);font-size:22px;color:var(--paper);'>BOON</span></div><h2 style='color:var(--paper); font-weight:600; margin-bottom:25px;'>Sign In to Your Account</h2><form><div class='form-group'><label for='login-email'>Email Address</label><input type='email' id='login-email' placeholder='Enter your email' required></div><div class='form-group'><label for='login-password'>Password</label><input type='password' id='login-password' placeholder='Enter your password' required></div><button type='submit' class='btn btn-primary'>Sign In</button></form><a href='#' class='link-light'>Forgot Password?</a><p class='link-light' style='margin-top:25px;'>Not a member? <a href='pricing.html' style='color:var(--accent); text-decoration:underline;'>Apply here</a></p><div class='trust-row' style='margin-top:40px; border-top:1px solid oklch(0.92 0.01 78 / 0.2); border-bottom:none; padding-top:20px;'><div class='t' style='color:oklch(0.92 0.01 78);'><b>Secure Login</b><span>Encrypted connection</span></div><div class='t' style='color:oklch(0.92 0.01 78);'><b>24/7 Access</b><span>Manage your growth anytime</span></div><div class='t' style='color:oklch(0.92 0.01 78);'><b>Dedicated Support</b><span>Help always available</span></div></div></div></main><footer><div class='wrap'>BOON &copy; 2026<br><a href='#privacy' style='margin-right:15px; color:var(--ink-faint);'>Privacy Policy</a><a href='#terms' style='color:var(--ink-faint);'>Terms of Service</a></div></footer><div class='sticky-mobile-cta'><a href='pricing.html' class='btn btn-primary'>Apply for BOON</a></div><script>
+// FAQ accordion
+document.querySelectorAll('.faq-item').forEach(function(item){
+  item.addEventListener('click',function(){
+    var answer=this.querySelector('.faq-answer');
+    var chevron=this.querySelector('.faq-chevron');
+    var isOpen=this.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i){
+      i.classList.remove('open');
+      i.querySelector('.faq-answer').style.maxHeight='0';
+      i.querySelector('.faq-chevron').textContent='+';
+    });
+    if(!isOpen){this.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';chevron.textContent='×';}
+  });
+});
+// Nav scroll
+window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});
+// Hamburger menu
+var ham=document.querySelector('.hamburger');var nl=document.querySelector('.nav-links');if(ham&&nl){ham.addEventListener('click',function(){nl.classList.toggle('open');});}
+// Picker tabs (Note: Not used on login.html, but kept for full site JS)
+document.querySelectorAll('.picker-tab').forEach(function(tab){
+  tab.addEventListener('click',function(){
+    var target=this.dataset.tab;
+    document.querySelectorAll('.picker-tab').forEach(function(t){t.classList.remove('active');});
+    document.querySelectorAll('.picker-content').forEach(function(c){c.classList.remove('active');});
+    this.classList.add('active');
+    var el=document.getElementById(target);
+    if(el){el.classList.add('active');}
+  });
+});
+// Picker card select (Note: Not used on login.html, but kept for full site JS)
+document.querySelectorAll('.picker-card').forEach(function(card){
+  card.addEventListener('click',function(){
+    var parent=this.closest('.picker-content');
+    if(parent){parent.querySelectorAll('.picker-card').forEach(function(c){c.classList.remove('selected');});}
+    this.classList.add('selected');
+  });
+});
+// Reveal on scroll
+const revealElements = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+revealElements.forEach(el => revealObserver.observe(el));
+</script></body></html>
+<script>document.querySelectorAll('.faq-item').forEach(function(item){item.addEventListener('click',function(){var answer=this.querySelector('.faq-answer');var chevron=this.querySelector('.faq-chevron');var isOpen=this.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-answer').style.maxHeight='0';i.querySelector('.faq-chevron').textContent='+';});if(!isOpen){this.classList.add('open');answer.style.maxHeight='2000px';chevron.textContent='×';}});});window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});</script>
 </body>
 </html>
