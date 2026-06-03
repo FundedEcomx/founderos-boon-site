@@ -4,125 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BOON</title>
-<meta name="description" content="i launch and run your telegram bot for you in 2 weeks with a full live dashboard, helped 60 million people, £497 per bot">
+<meta name="description" content="I help 👤 Solo consumers (B2C) with 💻 SaaS / Software services through BOON. [Add your price, guarantee, and what makes you different]">
 <meta property="og:title" content="BOON">
-<meta property="og:description" content="i launch and run your telegram bot for you in 2 weeks with a full live dashboard, helped 60 million people, £497 per bot">
+<meta property="og:description" content="I help 👤 Solo consumers (B2C) with 💻 SaaS / Software services through BOON. [Add your price, guarantee, and what makes you different]">
 <meta property="og:type" content="website">
 <meta name="twitter:title" content="BOON">
-<meta name="twitter:description" content="i launch and run your telegram bot for you in 2 weeks with a full live dashboard, helped 60 million people, £497 per bot">
+<meta name="twitter:description" content="I help 👤 Solo consumers (B2C) with 💻 SaaS / Software services through BOON. [Add your price, guarantee, and what makes you different]">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-    <a href="index.html" class="logo">BOON</a>
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="vsl.html">Watch Demo</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    <a href="pricing.html" class="nav-cta">Start My Bot Plan</a>
-</nav>
 
-<main>
-    <section class="vsl-container">
-        <h2>Watch How BOON Launches Your Telegram Bot</h2>
-        <p class="text-muted" style="text-align:center; max-width:600px; margin: 0 auto 60px;">Discover the power of automated Telegram engagement in this short, impactful video.</p>
-        <div class="vsl-placeholder">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 22v-20l18 10-18 10z"/></svg>
-            Watch This Before You Join
-        </div>
-    </section>
-
-    <section class="vsl-benefits">
-        <h2>Unlock These Benefits With Your BOON Bot</h2>
-        <ul>
-            <li><span class="icon">📈</span> Grow Your Audience: Attract new followers and expand your community with automated engagement.</li>
-            <li><span class="icon">⏱️</span> Save Time: Automate routine tasks like FAQs, content sharing, and member onboarding.</li>
-            <li><span class="icon">💰</span> Boost Profitability: Drive sales and leads directly through your Telegram channel with integrated features.</li>
-            <li><span class="icon">💬</span> Enhance Engagement: Keep your community active and informed with interactive content and timely updates.</li>
-            <li><span class="icon">📊</span> Gain Insights: Monitor your bot's performance with a live dashboard to optimize for better results.</li>
-            <li><span class="icon">✅</span> Effortless Launch: We handle all the technical setup, launching your bot in just 2 weeks.</li>
-            <li><span class="icon">🔒</span> Secure & Reliable: Your bot operates on a stable, secure platform, managed by experts.</li>
-        </ul>
-    </section>
-
-    <section id="testimonials" style="background: none; border: none; padding-top: 0;">
-        <h2>Real Results From Happy BOON Clients</h2>
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <div class="result-badge">🚀 Fast Launch & Growth</div>
-                <p>"BOON made launching my bot incredibly simple. Within weeks, my Telegram group was more active than ever! Highly recommend."</p>
-                <div class="author">Emily R. <span>Fitness Coach</span></div>
-            </div>
-            <div class="testimonial-card">
-                <div class="result-badge">💸 Automated Sales Funnel</div>
-                <p>"The bot handles inquiries and directs customers to my offerings. It's like having a 24/7 sales assistant for £497!"</p>
-                <div class="author">David S. <span>Course Creator</span></div>
-            </div>
-            <div class="testimonial-card">
-                <div class="result-badge">💡 Innovative Content Delivery</div>
-                <p>"I use my BOON bot to share exclusive content. My members love the instant access, and I love the ease of it."</p>
-                <div class="author">Olivia M. <span>Content Creator</span></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="cta">
-        <h2>Ready to Launch Your High-Impact Telegram Bot?</h2>
-        <a href="pricing.html" class="btn">Start My Bot Plan</a>
-        <p class="risk-reversal">Stop managing, start growing. We build it, you profit.</p>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2026 BOON. All rights reserved.</p>
-</footer>
-
-<div class="sticky-mobile-cta">
-    <a href="pricing.html" class="btn">Start My Bot Plan</a>
-</div>
-
-<script>
-// FAQ accordion
-document.querySelectorAll('.faq-item').forEach(function(item){
-  item.addEventListener('click',function(){
-    var answer=this.querySelector('.faq-answer');
-    var chevron=this.querySelector('.faq-chevron');
-    var isOpen=this.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(function(i){
-      i.classList.remove('open');
-      i.querySelector('.faq-answer').style.maxHeight='0';
-      i.querySelector('.faq-chevron').textContent='+';
-    });
-    if(!isOpen){this.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';chevron.textContent='\u00d7';}
-  });
-});
-// Nav scroll
-window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});
-// Picker tabs
-document.querySelectorAll('.picker-tab').forEach(function(tab){
-  tab.addEventListener('click',function(){
-    var target=this.dataset.tab;
-    document.querySelectorAll('.picker-tab').forEach(function(t){t.classList.remove('active');});
-    document.querySelectorAll('.picker-content').forEach(function(c){c.classList.remove('active');});
-    this.classList.add('active');
-    var el=document.getElementById(target);
-    if(el){el.classList.add('active');}
-  });
-});
-// Picker card select
-document.querySelectorAll('.picker-card').forEach(function(card){
-  card.addEventListener('click',function(){
-    var parent=this.closest('.picker-content');
-    if(parent){parent.querySelectorAll('.picker-card').forEach(function(c){c.classList.remove('selected');});}
-    this.classList.add('selected');
-  });
-});
-</script>
 <script>document.querySelectorAll('.faq-item').forEach(function(item){item.addEventListener('click',function(){var answer=this.querySelector('.faq-answer');var chevron=this.querySelector('.faq-chevron');var isOpen=this.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-answer').style.maxHeight='0';i.querySelector('.faq-chevron').textContent='+';});if(!isOpen){this.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';chevron.textContent='×';}});});window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});</script>
 </body>
 </html>
